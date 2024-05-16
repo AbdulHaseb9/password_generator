@@ -10,15 +10,18 @@
     <main>
       <div class="container">
         <h2>Password Generator</h2>
-        <input type="text" placeholder="password" disabled />
+        <input type="text" placeholder="password" disabled id="passwordvalue" />
         <div class="btns">
-          <button class="copy">
+          <button class="copy" onclick="copypassword()">
             <img src="images/icons8-copy-96.png" alt="copy icon" />Copy to
             Clipboard
           </button>
-          <button class="generate">Generate Password</button>
+          <button class="generate" onclick="createpassword()">
+            Generate Password
+          </button>
         </div>
       </div>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
